@@ -12,7 +12,8 @@ Building The Container
 ----------------------
 
 * Checkout repo and CD into it
-* Create a config.js file which contains details about the InfluxDB to connect to```
+* Create a config.js file which contains details about the InfluxDB to connect to
+```javascript
 define(['settings'], function(Settings) {
   
 
@@ -79,9 +80,9 @@ define(['settings'], function(Settings) {
     });
 });
 ```
-* ```docker build -t graphana ./```
+* Build the container ```docker build -t graphana ./```
 
 Running The Container
 ---------------------
 
-* ```docker run -d -p 6080:6080 graphana```
+* Run the container - ```docker run -d -p 6080:6080 graphana```
